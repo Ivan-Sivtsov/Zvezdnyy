@@ -1,0 +1,66 @@
+/* Меню */
+nav ul{
+    position: relative;
+    display: flex;
+    text-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    /* font-family: Merryweather; */
+}
+
+nav li, a{
+    padding-top: 0.8em;
+    cursor: pointer;
+    transition: 0.25s;
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover{
+    color: rgb(77, 77, 77);
+    transition: 0.25s;
+
+}
+
+nav li#aparts{
+    margin-left: 3em;
+}
+/* Кнопка брони */
+nav .booking.button{
+    position: relative;
+    display: flex;
+    text-wrap: wrap;
+    margin: auto 0;
+    margin-right: 1em;
+
+    background-color: orange;
+    color: white;
+
+    width: 8.5em;
+    height: 1.75em;
+
+    transition: 0.25s;
+    cursor: pointer;
+
+    border-radius: 1em;
+
+    border: 0.2em solid orange;
+}
+
+nav .booking.button:hover{
+    color: orange;
+    background-color: #F6F69C;
+    transition: 0.2s;
+}
+
+nav .booking.button span{
+    display: flex;
+    margin: auto;
+}
+/* Логотип */
+.logo img {
+    position: relative;
+    height: 3em;
+    margin: 0;
+}
