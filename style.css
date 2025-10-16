@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Geologica;
+    src: url(assets/fonts/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(assets/fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+body{
+    margin: 0;
+    /* height: 1000px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --site-header-height: 60px;
+    --font-size-base: 20px;
+}
+
+header{
+    position: fixed;
+    background-color: #F6F69C;
+    height: var(--site-header-height); /* font-size * em */
+    font-size: var(--font-size-base);
+    margin: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-family: Merriweather;
+
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav{
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+main{
+    padding-top: 3em;
+    font-size: 20px;
+}
+
+section{
+    padding-right: 40px;
+    padding-left: 40px;
+    
+}
+
+.video.block{
+    display: grid;
+    height: 671px;
+}
+
+.start{
+    display: grid;
+    background-color: #F6F69C;
+    height: 1000px;
+    padding-top: 40px;
+}
+
+.start.video{
+    position: sticky;
+    pointer-events: none;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+}
+
+.start.video video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
