@@ -36,6 +36,7 @@ header {
   margin: 0;
   right: 0;
   left: 0;
+  top: 0;
   z-index: 999;
   font-family: var(--merriweather-font);
 
@@ -396,11 +397,24 @@ section {
 /*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
 FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
 
-/* @media (max-width: 1400px) {
-    
-} */
+@media (max-width: 1400px) {
+  #zvlife-photo2 {
+    max-width: 370px;
+    /* display: none; */
+  }
+  #zvlife-photo3 {
+    display: none;
+  }
+  .zvlife-photo {
+    max-width: 300px;
+  }
+}
 
 @media (max-width: 1000px) {
+  .list-with-zvlife-photos {
+    flex-direction: column;
+  }
+
   header {
     font-size: 16px;
     height: var(--site-header-min-height);
