@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/styles/js.css">
 
     <link rel="stylesheet" href="assets/styles/nav.css"> <!--Стили для шапки-->
     
@@ -24,30 +26,78 @@
         <!--Меню-->
         <div class="menu">
             <ul>
-                <li id="lifestyle"><a href="">Жизнь в Звёздном</a></li>
+                <li id="lifestyle" ><a>Жизнь в Звёздном</a></li>
                 <li id="aparts"><a>Наши апартаменты</a></li>
             </ul>
         </div>
         <!--Бронь-->
-        <div class="booking button">
+        <div class="booking-button">
             <span>Забронировать</span>
         </div>
     </nav>
     </header>
 
     <!--Сам сайт-->
-    <!--Блок-приветствие-->
     <main>
+        <!--Блок-приветствие-->
         <section class="start">
             <div class="video block">
                 <div class="start video">
                     <video autoplay muted loop playsinline>
-                        <source src="assets/video/Пример Vertus.mp4" type="video/mp4">
+                        <source src="assets/video/example video.mp4" type="video/mp4"> <!--hero video.mp4-->
                     </video>
                 </div>
+                <div class="video content">
+                    <h1>Ваш Звёздный час <br>в собственном <br>апартаменте</h1>
+                    <h6>Премиальное жильё в ЖК «Звёздный» — это <em>больше</em>,<br> чем просто апартаменты. Это пространство, где<br> современный дизайн встречается с безупречным<br> стилем, а каждая деталь создана для вашего комфорта и удовольствия.</h6>
+                </div>
+            </div>
+        </section>
+        <!--Блок с апартаментами-->
+        <section class="aparts">
+            <div class="header-with-line left-h">
+                <p>НАШИ АПАРТАМЕНТЫ</p>
+            </div>            
+            <div id="aparts-main-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita aspernatur unde velit aliquid, ut totam, perspiciatis nemo qui accusantium aperiam. Quasi repudiandae rem excepturi deserunt, impedit temporibus, nam eius architecto rerum ducimus aspernatur illum atque corporis dignissimos delectus, in facere dolore doloremque. Officia rem quibusdam hic vel! Consequatur, animi.
+            </div>
+            <div class="example-of-apart">
+                <ul class="list-with-info-about-apart">
+                    <li><img src="assets/images/apart hor ex.jpg" alt=""></li>
+                    <li>
+                        <ul>
+                            <li>Название</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Блок "Жизнь в Звёздном"-->
+        <section class="zvlife">
+            <div class="header-with-line right-h">
+                <p>ЖИЗНЬ В ЗВЁЗДНОМ</p>
+            </div>
 
+            <div id="zvlife-photos">
+                <ul class="list-with-zvlife-photos">
+                    <li><img src="assets/images/lounge ex.webp" alt="" class="zvlife-photo"  id="zvlife-photo1"></li>
+                    <li><img src="assets/images/office-zv.JPG" alt="" class="zvlife-photo"   id="zvlife-photo2"></li>
+                    <li><img src="assets/images/street ex.webp" alt="" class="zvlife-photo"  id="zvlife-photo3"></li>
+                </ul>
+                <ul class="list-with-zvlife-photos">
+                    <li><img src="assets/images/zv future.jpg" alt="" class="zvlife-photo" id="zvlife-photo4"></img></li>
+                    <li><img src="assets/images/apart vert ex.jpg" alt="" class="zvlife-photo" id="zvlife-photo5"></img></li>
+                    <ul id="text-after-zvlife-photos">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis eaque aperiam provident corrupti, laudantium quisquam dolorem! Est molestiae itaque vitae. Commodi harum culpa, asperiores obcaecati exercitationem vitae dolores!</li>
+                        <li id="galery-button"><button class="button" > <span>Галерея</span></button></li>
+                    </ul>
+                </ul>
             </div>
         </section>
     </main>
+    <!-- <script src="js/nav.js"></script> -->
 </body>
 </html>

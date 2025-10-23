@@ -1,81 +1,353 @@
 @font-face {
-    font-family: Geologica;
-    src: url(assets/fonts/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf);
-}
+  font-family: Geologica;
+  src: url(assets/fonts/Geologica/Geologica-VariableFont_CRSV\SHRP\slnt\wght.ttf);
+} /* Geologica */
 
 @font-face {
-    font-family: Merriweather;
-    src: url(assets/fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
-}
+  font-family: Merriweather;
+  src: url(assets/fonts/Merriweather/Merriweather-VariableFont_opsz\wdth\wght.ttf);
+} /* Merriweather */
 
 @font-face {
-    font-family: Inter;
-    src: url(assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
-}
-body{
-    margin: 0;
-    /* height: 1000px; */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --site-header-height: 60px;
-    --font-size-base: 20px;
-}
+  font-family: Inter;
+  src: url(assets/fonts/Inter/Inter-VariableFont_opsz\wght.ttf);
+} /* Inter */
 
-header{
-    position: fixed;
-    background-color: #F6F69C;
-    height: var(--site-header-height); /* font-size * em */
-    font-size: var(--font-size-base);
-    margin: 0;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    font-family: Merriweather;
+body {
+  margin: 0;
+  font-family: Inter;
+  background-color: var(--background-color-hello);
 
-    padding-left: 40px;
-    padding-right: 40px;
+  --site-header-norm-height: 60px;
+  --site-header-min-height: 48px;
+  --font-size-base: 20px;
+  --background-color-hello: #f6f69c;
+  --geologica-font: Geologica;
+  --inter-font: Inter;
+  --merriweather-font: Merryweather;
+  --button-color: rgb(102, 102, 102);
 }
 
-nav{
-    height: 3em;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid;
+header {
+  position: fixed;
+  background-color: var(--background-color-hello);
+  height: var(--site-header-norm-height); /* font-size * em */
+  font-size: var(--font-size-base);
+  margin: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  font-family: var(--merriweather-font);
+
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-main{
-    padding-top: 3em;
-    font-size: 20px;
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
-section{
-    padding-right: 40px;
-    padding-left: 40px;
+nav {
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+main {
+  padding-top: 3em;
+  font-size: 20px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  text-wrap: wrap;
+  margin: auto 0;
+  margin-right: 1em;
+
+  background-color: var(--button-color);
+  color: white;
+
+  width: 8.5em;
+  height: 1.75em;
+
+  transition: 0.25s;
+  cursor: pointer;
+
+  border-radius: 1em;
+  border: 0.15em solid var(--button-color);
+
+  font-size: 24px;
+}
+
+.button:hover {
+  /* color: white; */
+  background-color: #ffffff00;
+  transition: 0.2s;
+}
+
+@media (hover: none) {
+  .button:hover {
+    /* color: white; */
+    background-color: #ffffff00;
+    /* transition: 0.2s; */
+  }
+}
+
+.button span {
+  display: flex;
+  margin: auto;
+}
+
+section {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.video.block {
+  display: grid;
+  height: 671px;
+}
+
+/* Контент над видео */
+.video.content {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+  padding: 36px;
+  align-content: space-between;
+}
+
+.video.content h1 {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+
+  color: white;
+  font-size: 54px;
+  font-family: Geologica;
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4); */
+
+  margin: 0;
+}
+
+.video.content h6 {
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 2;
+
+  color: white;
+  font-family: var(--geologica-font);
+  font-size: 16px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* БЛОК-ПРИВЕТСТВИЕ */
+/* Контент над видео */
+.start {
+  display: grid;
+  background-color: #f6f69c;
+  /* height: 800px; */
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
+.start.video {
+  position: sticky;
+
+  grid-row: 1;
+  grid-column: 1;
+  pointer-events: none;
+  box-sizing: border-box;
+  height: 100%;
+  z-index: 1;
+}
+
+.start.video video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.left-h {
+  text-align: left;
+}
+
+.right-h {
+  text-align: right;
+}
+
+.header-with-line {
+  border-bottom: 2px solid;
+  padding-top: 12px;
+}
+
+.header-with-line p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* БЛОК "ЖИЗНЬ В ЗВЁЗДНОМ" */
+.zvlife {
+  background-color: #153938; /*Цвет как в макете*/
+  color: white;
+  /* height: 1200px; */
+}
+
+#zvlife-photos {
+  margin-top: 50px;
+}
+
+/* СПИСКИ */
+.list-with-zvlife-photos {
+  position: relative;
+  display: flex;
+  text-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  margin: auto;
+  /* justify-content: space-between; */
+}
+
+#text-after-zvlife-photos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text-after-zvlife-photos li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#zvlife-photos li {
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+
+.zvlife-photo {
+  max-width: 400px;
+  border: 15px solid white;
+  /* margin: 30px; */
+}
+
+#zvlife-photo1 {
+  rotate: -0.07rad;
+  width: 350px;
+}
+
+#zvlife-photo2 {
+  rotate: 0.07rad;
+}
+
+#zvlife-photo3 {
+  rotate: -0.07rad;
+  width: 360px;
+}
+
+#zvlife-photo4 {
+  rotate: 0.07rad;
+}
+
+#zvlife-photo5 {
+  rotate: -0.07rad;
+  width: 240px;
+}
+
+/* БЛОК "АПАРТАМЕНТЫ" */
+
+.aparts {
+  background-color: orange;
+  height: 1000px; /* удалить после заполнения контентом */
+}
+
+#aparts-main-description {
+  padding-top: 30px;
+  font-size: 24px;
+  /* font-family: Geologica; */
+  width: 80%;
+}
+
+/* СТИЛИ ДЛЯ СЕКЦИЙ С АПАРТАМЕНТАМИ */
+.list-with-info-about-apart {
+  display: flex;
+}
+
+.example-of-apart {
+  margin-top: 100px;
+}
+
+.example-of-apart img {
+  width: 50%;
+  border: 15px solid white;
+}
+
+/*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
+FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
+/* @media (max-width: 1400px) {
     
+} */
+
+@media (max-width: 1000px) {
+  header {
+    font-size: 16px;
+    height: var(--site-header-min-height);
+  }
 }
 
-.video.block{
-    display: grid;
-    height: 671px;
+@media (max-width: 850px) {
+  main {
+    padding-top: 2em;
+  }
+  .video.content h1 {
+    font-size: 45px;
+  }
 }
 
-.start{
-    display: grid;
-    background-color: #F6F69C;
-    height: 1000px;
-    padding-top: 40px;
+@media (max-width: 750px) {
+  main {
+    padding-top: 1.5em;
+  }
+  .video.content h6 {
+    font-size: 14px;
+  }
 }
 
-.start.video{
-    position: sticky;
-    pointer-events: none;
-    box-sizing: border-box;
-    height: 100%;
-    z-index: 1;
+@media (max-width: 630px) {
+  header {
+    font-size: 12px;
+    height: 3em;
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  nav {
+    justify-content: flex-start;
+    /* font-size: 1px; */
+  }
+  nav ul li {
+    margin-top: 3px;
+  }
 }
 
-.start.video video{
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+@media (max-width: 600px) {
+  .video.content h1 {
+    font-size: 32px;
+  }
+  .video.content h6 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 520px) {
+  nav ul li {
+    /* margin-left: ; */
+    padding: 0;
+    margin-top: 11px;
+  }
 }
