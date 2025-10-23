@@ -1,6 +1,6 @@
 @font-face {
   font-family: Geologica;
-  src: url(assets/fonts/Geologica/Geologica-VariableFont_CRSV\SHRP\slnt\wght.ttf);
+  src: url(assets/fonts/Geologica/`Geologica-VariableFont_CRSV\SHRP\slnt\wght.ttf`);
 } /* Geologica */
 
 @font-face {
@@ -48,6 +48,16 @@ li {
   list-style: none;
 }
 
+input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input:active {
+  border: none;
+}
+
 nav {
   height: 3em;
   display: flex;
@@ -88,14 +98,6 @@ main {
   transition: 0.2s;
 }
 
-@media (hover: none) {
-  .button:hover {
-    /* color: white; */
-    background-color: #ffffff00;
-    /* transition: 0.2s; */
-  }
-}
-
 .button span {
   display: flex;
   margin: auto;
@@ -104,11 +106,12 @@ main {
 section {
   padding-right: 40px;
   padding-left: 40px;
+  padding-bottom: 90px;
 }
 
 .video.block {
   display: grid;
-  height: 671px;
+  height: 600px;
 }
 
 /* Контент над видео */
@@ -153,7 +156,6 @@ section {
   background-color: #f6f69c;
   /* height: 800px; */
   padding-top: 40px;
-  padding-bottom: 90px;
 }
 
 .start.video {
@@ -188,8 +190,68 @@ section {
 }
 
 .header-with-line p {
+  /* font-family: Geologica; */
   margin: 0;
   padding-top: 10px;
+}
+
+/* БЛОК "АПАРТАМЕНТЫ" */
+
+.aparts {
+  background-color: #f3c355;
+  /* height: 1000px; удалить после заполнения контентом */
+}
+
+#aparts-main-description {
+  padding-top: 30px;
+  font-size: 24px;
+  /* font-family: Geologica; */
+  width: 80%;
+}
+
+.aparts-blocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* СТИЛИ ДЛЯ СЕКЦИЙ С АПАРТАМЕНТАМИ */
+.example-of-apart {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  /* text-align: right; */
+}
+
+.example-of-apart ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.example-of-apart li {
+  /* list-style: ; */
+  font-size: 24px;
+  margin: 0.5em 0;
+}
+
+.right-ap {
+  text-align: left;
+}
+
+.left-ap {
+  text-align: right;
+}
+
+.example-of-apart img {
+  position: relative;
+  /* right: 0%; */
+  width: 50%;
+  min-width: 290px;
+  border: 15px solid white;
 }
 
 /* БЛОК "ЖИЗНЬ В ЗВЁЗДНОМ" */
@@ -201,6 +263,7 @@ section {
 
 #zvlife-photos {
   margin-top: 50px;
+  width: 100%;
 }
 
 /* СПИСКИ */
@@ -239,7 +302,7 @@ section {
 
 #zvlife-photo1 {
   rotate: -0.07rad;
-  width: 350px;
+  max-width: 350px;
 }
 
 #zvlife-photo2 {
@@ -248,7 +311,7 @@ section {
 
 #zvlife-photo3 {
   rotate: -0.07rad;
-  width: 360px;
+  max-width: 360px;
 }
 
 #zvlife-photo4 {
@@ -257,39 +320,82 @@ section {
 
 #zvlife-photo5 {
   rotate: -0.07rad;
-  width: 240px;
+  max-width: 240px;
 }
 
-/* БЛОК "АПАРТАМЕНТЫ" */
-
-.aparts {
-  background-color: orange;
-  height: 1000px; /* удалить после заполнения контентом */
+/* БЛОК С РАСПОЛОЖЕНИЕМ */
+.location {
+  background-color: #faf5f8;
 }
 
-#aparts-main-description {
+.location-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#location-main-description {
+  font-family: Geologica;
+
   padding-top: 30px;
   font-size: 24px;
   /* font-family: Geologica; */
   width: 80%;
+  justify-content: center;
 }
 
-/* СТИЛИ ДЛЯ СЕКЦИЙ С АПАРТАМЕНТАМИ */
-.list-with-info-about-apart {
+#location-main-description p {
+  text-align: center;
+  /* margin: auto -20px; */
+}
+
+.location-content img {
+  height: 400px;
+  width: 1200px;
+}
+
+/* ФУТЕР */
+.footer {
+  /* padding-top: 50px; */
+  background-color: #ffffe8;
+}
+
+.footer a {
+  text-decoration: none;
+  padding: 0;
+}
+
+.footer-lists {
   display: flex;
+  flex-direction: column;
 }
 
-.example-of-apart {
-  margin-top: 100px;
+#footer-main-list {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
 }
 
-.example-of-apart img {
-  width: 50%;
-  border: 15px solid white;
+#footer-main-list ul {
+  padding-left: 0;
+}
+
+#footer-main-list h1 {
+  border-bottom: 1px solid;
+}
+
+#footer-main-list li {
+  box-sizing: border-box;
+}
+
+#subscription-list li {
+  text-wrap: wrap;
+  max-width: 385px;
 }
 
 /*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
 FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
+
 /* @media (max-width: 1400px) {
     
 } */
@@ -308,6 +414,9 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
   .video.content h1 {
     font-size: 45px;
   }
+  .example-of-apart li {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -316,6 +425,12 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
   }
   .video.content h6 {
     font-size: 14px;
+  }
+  .example-of-apart li {
+    font-size: 16px;
+  }
+  .example-of-apart img {
+    border-width: 10px;
   }
 }
 
@@ -341,6 +456,9 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
   }
   .video.content h6 {
     font-size: 11px;
+  }
+  .example-of-apart li {
+    font-size: 12px;
   }
 }
 

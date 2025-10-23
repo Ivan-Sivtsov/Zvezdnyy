@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="assets/styles/js.css">
 
     <link rel="stylesheet" href="assets/styles/nav.css"> <!--Стили для шапки-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -39,6 +45,7 @@
 
     <!--Сам сайт-->
     <main>
+
         <!--Блок-приветствие-->
         <section class="start">
             <div class="video block">
@@ -53,6 +60,7 @@
                 </div>
             </div>
         </section>
+
         <!--Блок с апартаментами-->
         <section class="aparts">
             <div class="header-with-line left-h">
@@ -61,20 +69,28 @@
             <div id="aparts-main-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita aspernatur unde velit aliquid, ut totam, perspiciatis nemo qui accusantium aperiam. Quasi repudiandae rem excepturi deserunt, impedit temporibus, nam eius architecto rerum ducimus aspernatur illum atque corporis dignissimos delectus, in facere dolore doloremque. Officia rem quibusdam hic vel! Consequatur, animi.
             </div>
-            <div class="example-of-apart">
-                <ul class="list-with-info-about-apart">
-                    <li><img src="assets/images/apart hor ex.jpg" alt=""></li>
-                    <li>
+            <div class="aparts-blocks">
+                <div class="example-of-apart left-ap">
+                        <img src="assets/images/apart hor ex.jpg" alt="">
                         <ul>
                             <li>Название</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Адрес</li>
+                            <li>Двухкомнатная</li>
+                            <li>10000 руб./сутки</li>
                         </ul>
-                    </li>
-                </ul>
+                </div>
+                <div class="example-of-apart right-ap">
+                        <ul>
+                            <li>Название</li>
+                            <li>Адрес</li>
+                            <li>Двухкомнатная</li>
+                            <li>10000 руб./сутки</li>
+                        </ul>
+                        <img src="assets/images/apart hor ex.jpg" alt="">
+                </div>
             </div>
         </section>
+
         <!--Блок "Жизнь в Звёздном"-->
         <section class="zvlife">
             <div class="header-with-line right-h">
@@ -94,6 +110,63 @@
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis eaque aperiam provident corrupti, laudantium quisquam dolorem! Est molestiae itaque vitae. Commodi harum culpa, asperiores obcaecati exercitationem vitae dolores!</li>
                         <li id="galery-button"><button class="button" > <span>Галерея</span></button></li>
                     </ul>
+                </ul>
+            </div>
+        </section>
+
+        <!--Блок с картой-->
+        <section class="location">
+            <div class="header-with-line left-h">
+                <p>НАШЕ РАСПОЛОЖЕНИЕ</p>
+            </div>
+            <div class="location-content">
+                <div id="location-main-description">
+                    <p>
+                        По соседству с новым микрорайоном будет расположен Дворец водных видов спорта. В шаговой и транспортной доступности - гимназия №23, детский сад № 29, ГКБ №4,ТРЦ “Серебряный город”, Ивановский политехнический университет, Химакадемия, Медакадемия, Кардиодипансер и другие важные объекты социальной инфраструктуры
+                    </p>
+                </div>
+                <!--Здесь будет интерактивная Яндекс.Карта, следует разобраться с API-->
+                <img src="assets/images/location ex.png" alt="">
+            </div>
+        </section>
+
+        <!--Футтер-->
+        <section class="footer">
+            <div class="footer-lists">
+                <ul id="footer-main-list">
+                    <li>
+                        <ul>
+                            <li><h1>Контакты</h1></li>
+                            <li><a href="">Отдел продаж</a></li>
+                            <li><a href="">Отделка</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><h1>О компании</h1></li>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="">Публикации</a></li>
+                            <li><a href="">Поздравления</a></li>
+                            <li><a href="">Вакансии</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><h1>Социальные сети</h1></li>
+                            <li><a href="">Вконтакте</a></li>
+                            <li><a href="">Телеграм</a></li>
+                            <li><a href="">YouTube</a></li>
+                            <li><a href="">RuTube</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="subscription-list">
+                            <li><h1>Подписаться на рассылку</h1></li>
+                            <li>Подпишитесь на нашу рассылку, чтобы первыми получать актуальную информацию на почту</li>
+                            <li><input placeholder="Ваш Email"></input></li>
+                            <li></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
