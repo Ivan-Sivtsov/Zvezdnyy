@@ -37,7 +37,10 @@ header {
   right: 0;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
+
+  margin-top: env(safe-area-inset-top);
+
   font-family: var(--merriweather-font);
 
   padding-left: 40px;
@@ -288,6 +291,7 @@ section {
 #text-after-zvlife-photos li {
   list-style: none;
   text-decoration: none;
+  max-width: 500px;
 }
 
 #zvlife-photos li {
@@ -351,8 +355,10 @@ section {
 }
 
 .location-content img {
-  height: 400px;
-  width: 1200px;
+  /* height: 400px;
+  width: 1200px; */
+  height: 100%;
+  width: 100%;
 }
 
 /* ФУТЕР */
@@ -410,11 +416,52 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
   }
 }
 
+@media (max-width: 1150px) {
+  #zvlife-photo4 {
+    max-width: 250px;
+  }
+  #zvlife-photo5 {
+    max-width: 200px;
+  }
+  #text-after-zvlife-photos li {
+    font-size: 18px;
+    margin-left: -20px;
+  }
+}
+
 @media (max-width: 1000px) {
+  .zvlife-photos {
+    display: flex;
+  }
+
   .list-with-zvlife-photos {
     flex-direction: column;
   }
 
+  #zvlife-photo1 {
+    max-width: 70%;
+    margin: auto;
+  }
+  #zvlife-photo2 {
+    max-width: 70%;
+  }
+  #zvlife-photo3 {
+    max-width: 70%;
+  }
+  #zvlife-photo4 {
+    max-width: 70%;
+  }
+  #zvlife-photo5 {
+    max-width: 70%;
+  }
+
+  #text-after-zvlife-photos {
+    text-align: center;
+  }
+
+  #text-after-zvlife-photos li {
+    margin-bottom: 30px;
+  }
   header {
     font-size: 16px;
     height: var(--site-header-min-height);
