@@ -1,0 +1,23 @@
+:root{
+    --start-background-color: #904d30;
+}
+
+header{
+    background-color: var(--start-background-color);
+}
+
+header a{
+    color: white;
+}
+
+nav{
+    border-bottom: 1px solid white;
+}
+
+.start {
+    display: grid;
+    background-color: var(--start-background-color);
+    /* height: 800px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

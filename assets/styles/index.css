@@ -1,0 +1,404 @@
+header{
+    background-color: var(--background-color-hello);
+}
+
+header a{
+    color: black;
+}
+
+nav{
+    border-bottom: 1px solid;
+}
+/* БЛОК-ПРИВЕТСТВИЕ */
+/* Контент над видео */
+.start {
+    display: grid;
+    background-color: #f6f69c;
+    /* height: 800px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* БЛОК "АПАРТАМЕНТЫ" */
+
+.aparts {
+    background-color: #f3c355;
+    /* height: 1000px; удалить после заполнения контентом */
+}
+
+#aparts-main-description {
+    padding-top: 30px;
+    font-size: 24px;
+    /* font-family: Geologica; */
+    width: 80%;
+}
+
+.aparts-blocks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* СТИЛИ ДЛЯ СЕКЦИЙ С АПАРТАМЕНТАМИ */
+.example-of-apart {
+    display: grid;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* text-align: right; */
+}
+
+.apart-name{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+    font-family: Geologica;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.apart-photo{
+    position: sticky;
+
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+}
+
+.right-ap {
+    text-align: right;
+}
+
+.right-ap h3{
+    margin-right: 1em;
+}
+
+.left-ap {
+    text-align: left;
+}
+
+.left-ap h3{
+    margin-left: 1em;
+}
+
+.example-of-apart img {
+    object-fit: cover;
+    position: relative;
+    /* right: 0%; */
+    width: 50%;
+    min-width: 350px;
+    border: 15px solid white;
+
+}
+
+/* БЛОК "ЖИЗНЬ В ЗВЁЗДНОМ" */
+.zvlife {
+    background-color: #153938; /*Цвет как в макете*/
+    color: white;
+    /* height: 1200px; */
+}
+
+#zvlife-photos {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* СПИСКИ */
+.list-with-zvlife-photos {
+    position: relative;
+    display: flex;
+    text-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    /* justify-content: space-between; */
+}
+
+#text-after-zvlife-photos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-after-zvlife-photos li {
+    list-style: none;
+    text-decoration: none;
+    max-width: 500px;
+}
+
+#zvlife-photos li {
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+.zvlife-photo {
+    max-width: 400px;
+    border: 15px solid white;
+    /* margin: 30px; */
+}
+
+#zvlife-photo1 {
+    rotate: -0.07rad;
+    max-width: 350px;
+}
+
+#zvlife-photo2 {
+    rotate: 0.07rad;
+}
+
+#zvlife-photo3 {
+    rotate: -0.07rad;
+    max-width: 360px;
+}
+
+#zvlife-photo4 {
+    rotate: 0.07rad;
+}
+
+#zvlife-photo5 {
+    rotate: -0.07rad;
+    max-width: 240px;
+}
+
+/* БЛОК С РАСПОЛОЖЕНИЕМ */
+.location {
+    background-color: #faf5f8;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#location-main-description {
+    font-family: Geologica;
+
+    padding-top: 30px;
+    font-size: 24px;
+    /* font-family: Geologica; */
+    width: 80%;
+    justify-content: center;
+}
+
+#location-main-description p {
+    text-align: center;
+    /* margin: auto -20px; */
+}
+
+.location-content img {
+    /* height: 400px;
+    width: 1200px; */
+    height: 100%;
+    width: 100%;
+}
+
+/* ФУТЕР */
+footer {
+    /* padding-top: 50px; */
+    background-color: #ffffe8;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.footer-lists {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-main-list {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+#footer-main-list ul {
+    padding-left: 0;
+}
+
+#footer-main-list h1 {
+    border-bottom: 1px solid;
+    font-size: 2vw;
+}
+
+#footer-main-list li {
+    box-sizing: border-box;
+}
+
+#subscription-list li {
+    text-wrap: wrap;
+    max-width: 385px;
+}
+
+/*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
+FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
+
+@media (max-width: 1400px) {
+    #zvlife-photo2 {
+        max-width: 370px;
+        /* display: none; */
+    }
+    #zvlife-photo3 {
+        display: none;
+    }
+    .zvlife-photo {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #zvlife-photo4 {
+        max-width: 250px;
+    }
+    #zvlife-photo5 {
+        max-width: 200px;
+    }
+    #text-after-zvlife-photos li {
+        font-size: 18px;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .zvlife-photos {
+        display: flex;
+    }
+
+    .list-with-zvlife-photos {
+        flex-direction: column;
+    }
+
+    #zvlife-photo1 {
+        max-width: 70%;
+        margin: auto;
+    }
+    #zvlife-photo2 {
+        max-width: 70%;
+    }
+    #zvlife-photo3 {
+        max-width: 70%;
+    }
+    #zvlife-photo4 {
+        max-width: 70%;
+    }
+    #zvlife-photo5 {
+        max-width: 70%;
+    }
+
+    #text-after-zvlife-photos {
+        text-align: center;
+    }
+
+    #text-after-zvlife-photos li {
+        margin-bottom: 30px;
+    }
+    header {
+        font-size: 16px;
+        height: var(--site-header-min-height);
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        padding-top: 2em;
+    }
+
+    .video.content h1 {
+        font-size: 45px;
+    }
+
+    .example-of-apart li {
+        font-size: 20px;
+    }
+
+    .right-ap {
+        text-align: center;
+    }
+
+    .right-ap h3 {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .left-ap {
+        text-align: center;
+    }
+
+    .left-ap h3 {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .example-of-apart img {
+        width: 70%;
+    }
+}
+@media (max-width: 750px) {
+    main {
+        padding-top: 1.5em;
+    }
+
+    .video.content h6 {
+        font-size: 14px;
+    }
+
+    .example-of-apart li {
+        font-size: 16px;
+    }
+
+    .example-of-apart img {
+        border-width: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    header {
+        font-size: 12px;
+        height: 3em;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+
+    nav {
+        justify-content: flex-start;
+        /* font-size: 1px; */
+    }
+
+    nav ul li {
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .video.content h1 {
+        font-size: 32px;
+    }
+
+    .video.content h6 {
+        font-size: 11px;
+    }
+
+    .example-of-apart li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    nav ul li {
+        /* margin-left: ; */
+        padding: 0;
+        margin-top: 11px;
+    }
+}
