@@ -19,6 +19,7 @@ a {
   cursor: pointer;
   /* transition: 0.25s; */
   color: black;
+  text-wrap: nowrap;
 
   padding: 8px;
   border-radius: 30px;
