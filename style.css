@@ -179,11 +179,6 @@ section {
     margin-top: 20px;
 }
 
-.svg-under-video {
-    width: 30%;
-    min-width: 250px;
-}
-
 .left-h {
     text-align: left;
 }
@@ -271,6 +266,11 @@ section {
 @media (max-width: 850px) {
     main {
         padding-top: 2em;
+    }
+
+    section{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .video.content h1 {
