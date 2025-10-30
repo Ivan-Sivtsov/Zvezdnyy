@@ -246,13 +246,6 @@ section {
   /* text-align: right; */
 }
 
-
-.example-of-apart img{
-  position: absolute;
-  object-fit: cover;
-    /*min-width: 300px;*/
-}
-
 .apart-name{
   display: grid;
   grid-row: 1;
@@ -293,11 +286,13 @@ section {
 }
 
 .example-of-apart img {
+    object-fit: cover;
   position: relative;
   /* right: 0%; */
   width: 50%;
-  min-width: 400px;
+  min-width: 350px;
   border: 15px solid white;
+
 }
 
 /* БЛОК "ЖИЗНЬ В ЗВЁЗДНОМ" */
