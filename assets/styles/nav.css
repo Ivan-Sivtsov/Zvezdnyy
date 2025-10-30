@@ -1,94 +1,155 @@
-:root{
-    --booking-button-color: #FF854F;
+:root {
+  --booking-button-color: #ff854f;
 }
-
 
 /* Меню */
-nav ul{
-    position: relative;
-    display: flex;
-    text-wrap: wrap;
-    text-decoration: none;
-    list-style: none;
-    margin: auto;
-    /* font-family: Merryweather; */
+nav ul {
+  position: relative;
+  display: flex;
+  text-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  margin: auto;
+  /* font-family: Merryweather; */
 }
 
-nav li, a{
-    margin-top: 0.5em;
-    cursor: pointer;
-    /* transition: 0.25s; */
-    color: black;
+nav li,
+a {
+  margin-top: 0.5em;
+  cursor: pointer;
+  /* transition: 0.25s; */
+  color: black;
 
-    padding: 8px;
-    border-radius: 30px;
+  padding: 8px;
+  border-radius: 30px;
 }
 
-nav a:hover{
-    background-color: rgba(116, 116, 116, 0.223);
-    transition: 0.25s;
-
-
+nav a:hover {
+  background-color: rgba(116, 116, 116, 0.223);
+  transition: 0.25s;
 }
 
-nav li#aparts{
-    margin-left: 3em;
-    /* background-color: ; */
+nav li#aparts {
+  margin-left: 3em;
+  /* background-color: ; */
 }
 /* Кнопка брони */
-nav .booking-button{
-    position: relative;
-    display: flex;
-    text-wrap: wrap;
-    margin: auto 0;
-    margin-right: 1em;
+nav .booking-button {
+  position: relative;
+  display: flex;
+  text-wrap: wrap;
+  margin: auto 0;
+  margin-right: 1em;
 
-    background-color: var(--booking-button-color);
-    color: white;
+  background-color: var(--booking-button-color);
+  color: white;
 
-    width: 8.5em;
-    height: 1.75em;
+  width: 8.5em;
+  height: 1.75em;
 
-    transition: 0.25s;
-    cursor: pointer;
+  transition: 0.25s;
+  cursor: pointer;
 
-    border-radius: 1em;
+  border-radius: 1em;
 
-    border: 0.15em solid var(--booking-button-color);
+  border: 0.15em solid var(--booking-button-color);
 }
 
-nav .booking-button:hover{
-    color: var(--booking-button-color);
-    background-color: #ffffff00;
-    transition: 0.2s;
+nav .booking-button:hover {
+  color: var(--booking-button-color);
+  background-color: #ffffff00;
+  transition: 0.2s;
 }
 
-nav .booking-button span{
-    display: flex;
-    margin: auto;
+nav .booking-button span {
+  display: flex;
+  margin: auto;
 }
 /* Логотип */
 .logo img {
-    position: relative;
-    height: 3em;
-    margin: 0;
-
-    
+  position: relative;
+  height: 3em;
+  margin: 0;
 }
 
-@media (max-width: 800px){
-    nav .booking-button{
-        position: fixed;
-        bottom: 1.25em;
-        left: calc(50vw - 4.25em);
-        /* transform: translateX(35%); */
-        margin: auto;
+.amenu {
+  display: flex;
 
-        /* width: 14em;
+  position: absolute;
+  top: 3.2em;
+  left: 61.5%;
+  transform: translateX(-45%); /* центрирует меню под кнопкой */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 150px;
+
+  /* Плавное появление/скрытие */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.amenu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.amenu ul {
+  /* width: 12em; */
+  box-sizing: border-box;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0.25em 2em;
+}
+
+.amenu li {
+  padding: 0.3em 15px;
+  cursor: pointer;
+  /*border-bottom: 1px solid #eee;*/
+    text-wrap: nowrap;
+}
+
+.amenu li:last-child {
+  border-bottom: none; /* Убираем границу у последнего элемента */
+}
+
+.amenu li:hover {
+  background-color: #f5f5f5;
+}
+
+.amenu a {
+  margin-top: none;
+  cursor: pointer;
+  transition: none;
+  color: black;
+
+  padding: 0;
+  border-radius: 0;
+}
+
+.amenu a:hover {
+  background-color: unset;
+  transition: none;
+}
+
+@media (max-width: 800px) {
+  nav .booking-button {
+    position: fixed;
+    bottom: 1.25em;
+    left: calc(50vw - 4.25em);
+    /* transform: translateX(35%); */
+    margin: auto;
+
+    /* width: 14em;
         height: 3em;
         border-radius: 30px; */
 
-        font-size: 24px;
-    }
-
+    font-size: 24px;
+  }
 }
