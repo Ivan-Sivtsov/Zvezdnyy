@@ -10,6 +10,7 @@ nav ul {
   text-decoration: none;
   list-style: none;
   margin: auto;
+    padding: 0;
   /* font-family: Merryweather; */
 }
 
@@ -153,4 +154,8 @@ nav .booking-button span {
 
     font-size: 24px;
   }
+    nav li#aparts {
+        margin-left: 1em;
+        /* background-color: ; */
+    }
 }
