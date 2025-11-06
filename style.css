@@ -112,8 +112,8 @@ button span {
 }
 
 footer, section {
-  padding-right: 40px;
-  padding-left: 40px
+  padding-right: 60px;
+  padding-left: 60px
 }
 section{
     padding-bottom: 90px;
@@ -235,28 +235,10 @@ footer h1{
 #sub-description {
     margin-top: 15px;
 }
-/*#contacts{*/
-/*    grid-column: 1;*/
-/*    grid-row: 1;*/
-/*}*/
-
-/*#company{*/
-/*    grid-column: 2;*/
-/*    grid-row: 1;*/
-/*}*/
-
-/*#social{*/
-/*    grid-column: 3;*/
-/*    grid-row: 1;*/
-/*}*/
 
 #subscription-list li {
     text-wrap: wrap;
     max-width: 385px;
-/*{*/
-/*    grid-column: 4;*/
-/*    grid-row: 2;*/
-/*}*/
 }
 
 #sub-button{
@@ -296,6 +278,24 @@ footer h1{
     width: 20%;
     max-width: 200px;
     min-width: 160px;
+}
+
+/* БЛОК С РАСПОЛОЖЕНИЕМ */
+.location {
+    background-color: #faf5f8;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map{
+    padding-top: 50px;
+    width: 80vw;
+    /*height: 100%;*/
+    height: 500px;
 }
 
 @media (max-width: 1400px) {
@@ -450,11 +450,14 @@ footer h1{
 }
 
 @media (max-width: 630px) {
+
+    #map{
+        height: 800px;
+    }
+
     header {
         font-size: 10px;
-        height: 3em;
-        /* padding: 0; */
-        /* margin: 0; */
+        height: 3.em;
     }
 
     nav {

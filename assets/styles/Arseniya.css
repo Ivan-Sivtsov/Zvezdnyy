@@ -22,6 +22,55 @@ nav{
     padding-bottom: 40px;
 }
 
+.apart{
+    padding-top: 40px;
+    background-color: #ff854f;
+}
+
+.apart.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.apart.images img{
+    width: 30%;
+    max-width: 400px;
+}
+
+.apart.video.block{
+    display: flex;
+    justify-content: center;
+}
+
+.apart.video {
+    position: sticky;
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+}
+
+.apart.video video {
+    position: absolute;
+    /*margin-top: 100px;*/
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+
+#apart-description{
+    color: white;
+    font-family: Geologica;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    /*margin-bottom: 50px;*/
+}
+
 /*Следует проверить на наличие отсутствующих на странице классов и айди*/
 
 /*@media (max-width: 1400px) {*/
