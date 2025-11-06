@@ -206,13 +206,6 @@ nav{
     height: 500px;
 }
 
-/*.location-content img {*/
-/*    !* height: 400px;*/
-/*    width: 1200px; *!*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*}*/
-
 /*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
 FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
 
@@ -286,10 +279,6 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
         font-size: 14px;
     }
 
-    #map{
-        height: 800px;
-    }
-
     .video.content h1 {
         font-size: 45px;
     }
@@ -339,8 +328,11 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
 }
 
 @media (max-width: 630px) {
+    #map{
+        height: 800px;
+    }
     header {
-        font-size: 12px;
+        font-size: 8px;
         height: 3em;
         /* padding: 0; */
         /* margin: 0; */
