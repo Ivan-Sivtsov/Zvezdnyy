@@ -1,16 +1,16 @@
 @font-face {
   font-family: Geologica;
-  src: url(assets/fonts/Geologica/`Geologica-VariableFont_CRSV\SHRP\slnt\wght.ttf`);
+  src: url(assets/fonts/Geologica/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf);
 } /* Geologica */
 
 @font-face {
   font-family: Merriweather;
-  src: url(assets/fonts/Merriweather/Merriweather-VariableFont_opsz\wdth\wght.ttf);
+  src: url(assets/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf);
 } /* Merriweather */
 
 @font-face {
   font-family: Inter;
-  src: url(assets/fonts/Inter/Inter-VariableFont_opsz\wght.ttf);
+  src: url(assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf);
 } /* Inter */
 
 body {
@@ -41,7 +41,7 @@ header {
 
   margin-top: env(safe-area-inset-top);
 
-  font-family: var(--merriweather-font);
+  font-family: var(--geologica-font);
 
   padding-left: 40px;
   padding-right: 40px;

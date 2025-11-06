@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li><a href="bogdan.html">Богдана Хмельницкого</a></li>
         <li><a href="krasnyh.html">Красных Зорь</a></li>
         <li><a href="lezhnevskaya.html">Лежневская</a></li>
-        <li><a href="naumova.html">Наумова</a></li>
+<!--        <li><a href="naumova.html">Наумова</a></li>-->
       </ul>
     `;
 

@@ -187,7 +187,6 @@ nav{
 
 #location-main-description {
     font-family: Geologica;
-
     padding-top: 30px;
     font-size: 24px;
     /* font-family: Geologica; */
@@ -200,12 +199,18 @@ nav{
     /* margin: auto -20px; */
 }
 
-.location-content img {
-    /* height: 400px;
-    width: 1200px; */
-    height: 100%;
-    width: 100%;
+#map{
+    padding-top: 50px;
+    width: 80%;
+    height: 500px;
 }
+
+/*.location-content img {*/
+/*    !* height: 400px;*/
+/*    width: 1200px; *!*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
 
 /*НАСТРОИТЬ АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ ФОТОК
 FLEX МЕНЯТЬ НА GRID (мб по-другому)*/

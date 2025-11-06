@@ -11,7 +11,7 @@ nav ul {
   list-style: none;
   margin: auto;
     padding: 0;
-  /* font-family: Merryweather; */
+   /*font-family: Geologica;*/
 }
 
 nav li,
@@ -79,7 +79,7 @@ nav .booking-button span {
 
   position: absolute;
   top: 3.2em;
-  left: 61.5%;
+  left: 45%;
   transform: translateX(-45%); /* центрирует меню под кнопкой */
   background-color: #fff;
   border: 1px solid #ddd;
@@ -126,7 +126,7 @@ nav .booking-button span {
 }
 
 .amenu a {
-  margin-top: none;
+  margin-top: 0;
   cursor: pointer;
   transition: none;
   color: black;
@@ -157,5 +157,11 @@ nav .booking-button span {
     nav li#aparts {
         margin-left: 1em;
         /* background-color: ; */
+    }
+    .amenu{
+        left: 35%
+    }
+    .amenu ul{
+        padding: 0.25em 1em;
     }
 }
