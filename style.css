@@ -200,19 +200,6 @@ section{
     padding-top: 10px;
 }
 
-@media (max-width: 1400px) {
-    #zvlife-photo2 {
-        max-width: 370px;
-        /* display: none; */
-    }
-    #zvlife-photo3 {
-        display: none;
-    }
-    .zvlife-photo {
-        max-width: 300px;
-    }
-}
-
 /* ФУТЕР */
 footer {
     /* padding-top: 50px; */
@@ -311,6 +298,19 @@ footer h1{
     min-width: 160px;
 }
 
+@media (max-width: 1400px) {
+    #zvlife-photo2 {
+        max-width: 370px;
+        /* display: none; */
+    }
+    #zvlife-photo3 {
+        display: none;
+    }
+    .zvlife-photo {
+        max-width: 300px;
+    }
+}
+
 @media (max-width: 1310px) {
     .footer-lists{
         justify-content: space-evenly;
@@ -382,6 +382,11 @@ footer h1{
 }
 
 @media (max-width: 850px) {
+    .header-with-line{
+        font-size: 14px;
+        border-bottom: 1px solid;
+    }
+
     main {
         padding-top: 2em;
     }

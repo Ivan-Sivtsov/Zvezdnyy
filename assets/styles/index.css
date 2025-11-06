@@ -201,8 +201,9 @@ nav{
 
 #map{
     padding-top: 50px;
-    width: 80%;
-    height: 100%;
+    width: 80vw;
+    /*height: 100%;*/
+    height: 500px;
 }
 
 /*.location-content img {*/
@@ -281,8 +282,12 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
 }
 
 @media (max-width: 850px) {
-    main {
-        padding-top: 2em;
+    #aparts-main-description{
+        font-size: 14px;
+    }
+
+    #map{
+        height: 800px;
     }
 
     .video.content h1 {
