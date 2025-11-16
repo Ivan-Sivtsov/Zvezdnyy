@@ -1,9 +1,9 @@
 :root{
-    --start-background-color: #904d30;
+    --start-background-color-ars: #904d30;
 }
 
 header{
-    background-color: var(--start-background-color);
+    background-color: var(--start-background-color-ars);
 }
 
 header a{
@@ -16,7 +16,7 @@ nav{
 
 .start {
     display: grid;
-    background-color: var(--start-background-color);
+    background-color: var(--start-background-color-ars);
     /* height: 800px; */
     padding-top: 40px;
     padding-bottom: 40px;
@@ -24,19 +24,20 @@ nav{
 
 .apart{
     padding-top: 40px;
-    background-color: #ff854f;
+    background-color: #f4a460;
 }
 
-.apart.images{
+.apart-images{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
 
-.apart.images img{
+.apart-images img{
     width: 30%;
     max-width: 400px;
+    /*background-color: white;*/
 }
 
 .apart.video.block{
@@ -71,6 +72,10 @@ nav{
     /*margin-bottom: 50px;*/
 }
 
+/*ОТЗЫВЫ*/
+.comments{
+    background-color: bisque;
+}
 /*Следует проверить на наличие отсутствующих на странице классов и айди*/
 
 /*@media (max-width: 1400px) {*/

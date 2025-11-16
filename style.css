@@ -281,10 +281,6 @@ footer h1{
 }
 
 /* БЛОК С РАСПОЛОЖЕНИЕМ */
-.location {
-    background-color: #faf5f8;
-}
-
 .location-content {
     display: flex;
     flex-direction: column;
@@ -457,7 +453,7 @@ footer h1{
 
     header {
         font-size: 10px;
-        height: 3.em;
+        height: 3em;
     }
 
     nav {
