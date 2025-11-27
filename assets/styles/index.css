@@ -9,6 +9,16 @@ header a{
 nav{
     border-bottom: 1px solid;
 }
+
+nav .booking-button{
+    background-color: var(--booking-button-color);
+    border: 0.15em solid var(--booking-button-color);
+}
+
+nav .booking-button:hover {
+    color: var(--booking-button-color);
+}
+
 /* БЛОК-ПРИВЕТСТВИЕ */
 /* Контент над видео */
 .start {
@@ -50,7 +60,7 @@ nav{
 /* СТИЛИ ДЛЯ СЕКЦИЙ С АПАРТАМЕНТАМИ */
 .example-of-apart {
     display: grid;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     margin-top: 50px;
     /* text-align: right; */
 }
@@ -112,8 +122,13 @@ nav{
 }
 
 #zvlife-photos {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     width: 100%;
+}
+#zvlife-photo3 {
+    width: 300px;
 }
 
 /* СПИСКИ */
@@ -141,28 +156,34 @@ nav{
 }
 
 #zvlife-photos li {
-    margin-right: 70px;
+    margin-right: 50px;
     margin-bottom: 50px;
+}
+
+.list-with-zvlife-photos{
+    padding: 0;
 }
 
 .zvlife-photo {
     max-width: 400px;
-    border: 15px solid white;
+    border: 10px solid white;
     /* margin: 30px; */
 }
 
 #zvlife-photo1 {
     rotate: -0.07rad;
-    max-width: 350px;
+    max-width: 380px;
 }
 
 #zvlife-photo2 {
     rotate: 0.07rad;
+    max-width: 380px;
 }
 
 #zvlife-photo3 {
     rotate: -0.07rad;
-    max-width: 360px;
+    max-width: 400px;
+    width: 360px;
 }
 
 #zvlife-photo4 {
@@ -186,15 +207,20 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
         max-width: 370px;
         /* display: none; */
     }
-    #zvlife-photo3 {
-        display: none;
-    }
     .zvlife-photo {
         max-width: 300px;
+        justify-content: center;
     }
 }
 
 @media (max-width: 1150px) {
+    .apart-name{
+        font-size: 18px;
+    }
+    #zvlife-photo3 {
+        width: 0;
+        border: none;
+    }
     #zvlife-photo4 {
         max-width: 250px;
     }
@@ -214,6 +240,13 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
 
     .list-with-zvlife-photos {
         flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .zvlife li{
+        display: flex;
+        margin: 0;
+        justify-content: center;
     }
 
     #zvlife-photo1 {
@@ -224,6 +257,8 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
         max-width: 70%;
     }
     #zvlife-photo3 {
+        width: 360px;
+        display: contents;
         max-width: 70%;
     }
     #zvlife-photo4 {
@@ -260,7 +295,7 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
     }
 
     .right-ap h3 {
-        font-size: 16px;
+        /*font-size: 16px;*/
         margin-right: 0;
     }
 
@@ -269,12 +304,16 @@ FLEX МЕНЯТЬ НА GRID (мб по-другому)*/
     }
 
     .left-ap h3 {
-        font-size: 16px;
+        /*font-size: 16px;*/
         margin-left: 0;
     }
 
     .example-of-apart img {
         width: 70%;
+    }
+
+    .apart-name{
+        font-size: 24px;
     }
 }
 @media (max-width: 750px) {

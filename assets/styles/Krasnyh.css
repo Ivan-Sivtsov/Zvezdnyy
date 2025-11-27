@@ -18,6 +18,15 @@ nav{
     border-bottom: 1px solid white;
 }
 
+nav .booking-button{
+    background-color: var(--booking-button-color);
+    border: 0.15em solid var(--booking-button-color);
+}
+
+nav .booking-button:hover {
+    color: var(--booking-button-color);
+}
+
 .start {
     display: grid;
     background-color: var(--start-background-color-kras);
@@ -96,4 +105,3 @@ nav{
 
 /*@media (max-width: 1150px) {*/
 /*}*/
-

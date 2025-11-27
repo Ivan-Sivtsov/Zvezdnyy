@@ -1,5 +1,6 @@
 :root {
   --booking-button-color: #ff854f;
+  --booking-button-color2: #ff4f00;
 }
 
 /* Меню */
@@ -14,7 +15,7 @@ nav ul {
    /*font-family: Geologica;*/
 }
 
-nav li,
+nav .menu li,
 a {
   margin-top: 0.5em;
   cursor: pointer;
@@ -26,7 +27,7 @@ a {
   border-radius: 30px;
 }
 
-nav a:hover {
+nav #aparts a:hover, #lifestyle a:hover {
   background-color: rgba(116, 116, 116, 0.223);
   transition: 0.25s;
 }
@@ -43,7 +44,6 @@ nav .booking-button {
   margin: auto 0;
   margin-right: 1em;
 
-  background-color: var(--booking-button-color);
   color: white;
 
   width: 8.5em;
@@ -54,11 +54,10 @@ nav .booking-button {
 
   border-radius: 1em;
 
-  border: 0.15em solid var(--booking-button-color);
+  -webkit-user-select: none;
 }
 
 nav .booking-button:hover {
-  color: var(--booking-button-color);
   background-color: #ffffff00;
   transition: 0.2s;
 }
@@ -68,8 +67,14 @@ nav .booking-button span {
   margin: auto;
 }
 /* Логотип */
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .logo img {
-  position: relative;
+  /*position: relative;*/
   height: 3em;
   margin: 0;
 }
@@ -126,6 +131,7 @@ nav .booking-button span {
 }
 
 .amenu a {
+  -webkit-user-select: none;
   margin-top: 0;
   cursor: pointer;
   transition: none;
@@ -135,16 +141,33 @@ nav .booking-button span {
   border-radius: 0;
 }
 
-.amenu a:hover {
-  background-color: unset;
-  transition: none;
+#undo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1.25em;
+    left: 1.25em;
+    z-index: 100;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
 }
+
+#a-undo{
+    padding: 0;
+}
+
+/*.amenu a:hover {*/
+/*  background-color: unset;*/
+/*  transition: none;*/
+/*}*/
 
 @media (max-width: 800px) {
   nav .booking-button {
     position: fixed;
     bottom: 1.25em;
-    left: calc(50vw - 4.25em);
+    left: calc(50vw - 4.25em - 10px);
     /* transform: translateX(35%); */
     margin: auto;
 
@@ -163,5 +186,12 @@ nav .booking-button span {
     }
     .amenu ul{
         padding: 0.25em 1em;
+    }
+    #undo{
+        width: 2.25em;
+        height: 2.25em;
+    }
+    #undo img{
+        height: 1.25em;
     }
 }

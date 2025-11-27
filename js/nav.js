@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuHTML = `
       <ul>
-        <li><a href="arseniya.html">Арсения</a></li>
-        <li><a href="bogdan.html">Богдана Хмельницкого</a></li>
-        <li><a href="krasnyh.html">Красных Зорь</a></li>
-        <li><a href="lezhnevskaya.html">Лежневская</a></li>
+        <a href="arseniya.html"><li>Арсения</li></a>
+        <a href="bogdan.html"><li>Богдана Хмельницкого</li></a>
+        <a href="krasnyh.html"><li>Красных Зорь</li></a>
+        <a href="lezhnevskaya.html"><li>Лежневская</li></a>
 <!--        <li><a href="naumova.html">Наумова</a></li>-->
       </ul>
     `;

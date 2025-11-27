@@ -1,0 +1,107 @@
+:root{
+    --start-background-color-lezh6: #90be6d;
+    --apart-background-color-lezh6: #2a9d8f;
+    --location-background-color-lezh6: #e9c46a;
+    --comments-background-color-lezh6: #264653;
+
+}
+
+header{
+    background-color: var(--start-background-color-lezh6);
+}
+
+header a{
+    color: white;
+}
+
+nav{
+    border-bottom: 1px solid white;
+}
+
+nav .booking-button{
+    background-color: var(--booking-button-color);
+    border: 0.15em solid var(--booking-button-color);
+}
+
+nav .booking-button:hover {
+    color: var(--booking-button-color);
+}
+
+.start {
+    display: grid;
+    background-color: var(--start-background-color-lezh6);
+    /* height: 800px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.apart{
+    padding-top: 40px;
+    background-color: var(--apart-background-color-lezh6);
+}
+
+.apart-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.apart-images img{
+    width: 30%;
+    /*max-width: 400px;*/
+    /*background-color: white;*/
+}
+
+.apart.video.block{
+    display: flex;
+    justify-content: center;
+}
+
+.apart.video {
+    position: sticky;
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+}
+
+.apart.video video {
+    position: absolute;
+    /*margin-top: 100px;*/
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+
+#apart-description{
+    color: white;
+    font-family: Geologica;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    /*margin-bottom: 50px;*/
+}
+
+.location{
+    background-color: var(--location-background-color-lezh6);
+}
+
+/*ОТЗЫВЫ*/
+.comments{
+    background-color: var(--comments-background-color-lezh6);
+}
+
+.comments .header-with-line{
+    color: white;
+}
+/*Следует проверить на наличие отсутствующих на странице классов и айди*/
+
+/*@media (max-width: 1400px) {*/
+
+/*}*/
+
+/*@media (max-width: 1150px) {*/
+/*}*/

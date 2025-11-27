@@ -1,0 +1,164 @@
+:root{
+    --strawberry-red: #F94144;
+    --atomic-tangerine: #F3722C;
+    --carrot-orange: #F8961E;
+    --coral-glow: #F9844A;
+    --tuscan-sun: #F9C74F;
+    --willow-green: #90BE6D;
+    --seagrass: #43AA8B;
+    --dark-cyan: #4D908E;
+    --blue-slate: #577590;
+    --cerulean: #277DA1;
+
+    --start-background-color-kras: var(--coral-glow);
+    --apart-background-1: var(--strawberry-red);
+    --apart-background-2: var(--atomic-tangerine);
+    --apart-background-3: var(--carrot-orange);
+    --apart-background-4: var(--coral-glow);
+    --apart-background-5: var(--tuscan-sun);
+    --apart-background-6: var(--willow-green);
+    --location-background-color-kras: var(--tuscan-sun);
+    --comments-background-color-kras: #264653;
+}
+
+p a{
+    color: white;
+}
+
+header{
+    background-color: var(--start-background-color-kras);
+}
+
+header a{
+    color: white;
+}
+
+nav{
+    border-bottom: 1px solid white;
+}
+
+.header-with-line{
+    color: white;
+}
+
+.start {
+    display: grid;
+    background-color: var(--start-background-color-kras);
+    /* height: 800px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#sct1.apart{
+    background-color: var(--apart-background-1);
+}
+#sct2.apart{
+    background-color: var(--apart-background-2);
+}
+#sct3.apart{
+    background-color: var(--apart-background-3);
+}
+#sct4.apart{
+    background-color: var(--apart-background-4);
+}
+#sct5.apart{
+    background-color: var(--apart-background-5);
+}
+#sct6.apart{
+    background-color: var(--apart-background-6);
+}
+.apart-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.apart-images img{
+    width: 30%;
+    /*max-width: 400px;*/
+    /*background-color: white;*/
+}
+.apart.video.block{
+    display: flex;
+    justify-content: center;
+}
+.apart.video {
+    position: sticky;
+    grid-row: 1;
+    grid-column: 1;
+    pointer-events: none;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+}
+.apart.video video {
+    position: absolute;
+    /*margin-top: 100px;*/
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+.apart-description{
+    color: white;
+    font-family: Geologica;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    /*margin-bottom: 50px;*/
+}
+
+.location{
+    /*color: white;*/
+    background-color: var(--location-background-color-kras);
+}
+
+/*ОТЗЫВЫ*/
+.comments{
+    background-color: var(--comments-background-color-kras);
+}
+
+.comments .header-with-line{
+    color: white;
+}
+
+nav .booking-button{
+    background-color: var(--booking-button-color2);
+    border: 0.15em solid var(--booking-button-color2);
+}
+
+nav .booking-button:hover {
+    color: var(--booking-button-color2);
+}
+
+button{
+    background-color: var(--blue-slate);
+    color: white;
+    border: 0.15em solid var(--blue-slate);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+button:hover {
+    /* color: white; */
+    background-color: #ffffff00;
+}
+
+button a{
+    margin: 0;
+    color: white;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+/*Следует проверить на наличие отсутствующих на странице классов и айди*/
+
+/*@media (max-width: 1400px) {*/
+
+/*}*/
+
+/*@media (max-width: 1150px) {*/
+/*}*/

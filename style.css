@@ -55,6 +55,11 @@ li {
 a {
   text-decoration: none;
   -webkit-user-select: none;
+  color: inherit;
+}
+
+h1 a{
+    color: white;
 }
 
 input {
@@ -85,8 +90,8 @@ button {
   margin: auto 0;
   margin-right: 1em;
 
-  background-color: var(--button-color);
-  color: white;
+  /*background-color: var(--button-color);*/
+  /*color: white;*/
 
   width: 8.5em;
   height: 1.75em;
@@ -95,14 +100,14 @@ button {
   cursor: pointer;
 
   border-radius: 1em;
-  border: 0.15em solid var(--button-color);
+  /*border: 0.15em solid var(--button-color);*/
 
   font-size: 24px;
 }
 
 button:hover {
   /* color: white; */
-  background-color: #ffffff00;
+  /*background-color: #ffffff00;*/
   transition: 0.2s;
 }
 
@@ -198,6 +203,7 @@ section{
     /* font-family: Geologica; */
     margin: 0;
     padding-top: 10px;
+    padding-bottom: 0.2em;
 }
 
 /* ФУТЕР */
@@ -258,6 +264,7 @@ footer h1{
 }
 
 #sub-button span{
+    color: white;
     font-size: 16px;
 }
 
@@ -292,6 +299,10 @@ footer h1{
     width: 80vw;
     /*height: 100%;*/
     height: 500px;
+}
+
+.btn button{
+    margin: 0;
 }
 
 @media (max-width: 1400px) {
@@ -424,6 +435,17 @@ footer h1{
 
     .footer-lists{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .apart-images{
+        flex-direction: column;
+        align-items: center;
+    }
+    .apart-images img{
+        margin-top: 40px;
+        width: 100%;
     }
 }
 
