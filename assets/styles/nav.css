@@ -37,7 +37,7 @@ nav li#aparts {
   /* background-color: ; */
 }
 /* Кнопка брони */
-nav .booking-button {
+nav #booking-button {
   position: relative;
   display: flex;
   text-wrap: wrap;
@@ -57,12 +57,12 @@ nav .booking-button {
   -webkit-user-select: none;
 }
 
-nav .booking-button:hover {
+nav #booking-button:hover {
   background-color: #ffffff00;
   transition: 0.2s;
 }
 
-nav .booking-button span {
+nav #booking-button span {
   display: flex;
   margin: auto;
 }
@@ -163,11 +163,87 @@ nav .booking-button span {
 /*  transition: none;*/
 /*}*/
 
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    touch-action: pan-y;
+}
+
+#popup-window {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    position: relative;
+}
+
+.popup-content {
+    max-height: calc(80vh - 100px);
+    overflow-y: auto;
+    padding-right: 16px;
+    margin-top: 15px;
+
+    /* Ключевые свойства */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    touch-action: pan-y;
+
+    /* Принудительная активация прокрутки */
+    transform: translateZ(0);
+    will-change: scroll-position;
+}
+
+/* Скроллбар */
+.popup-content::-webkit-scrollbar {
+    width: 16px;
+}
+.popup-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+.popup-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+    border: 4px solid #f1f1f1;
+}
+
+#popup-window h3{
+    margin-top: 0;
+}
+/* Кнопка закрытия */
+#close-popup {
+    width: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+#close-popup:hover {
+    color: #000;
+}
+
 @media (max-width: 800px) {
-  nav .booking-button {
+  nav #booking-button {
     position: fixed;
     bottom: 1.25em;
-    left: calc(50vw - 4.25em - 10px);
+    left: calc(50vw - 4.25em - 2.5px);
     /* transform: translateX(35%); */
     margin: auto;
 
@@ -177,6 +253,14 @@ nav .booking-button span {
 
     font-size: 24px;
   }
+    nav .menu li, a{
+        margin-top: 0.1em;
+    }
+
+    nav .logo{
+        margin-top: 0.75em;
+    }
+
     nav li#aparts {
         margin-left: 1em;
         /* background-color: ; */
@@ -191,7 +275,12 @@ nav .booking-button span {
         width: 2.25em;
         height: 2.25em;
     }
-    #undo img{
+    #undo img {
         height: 1.25em;
+    }
+}
+@media (max-width: 400px) {
+    nav #booking-button {
+        right: 1.25em;
     }
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Всплывающее окно с виджетом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="booking-button">Забронировать</button>
+
+<!-- Всплывающее окно -->
+<div id="popup-overlay">
+    <div id="popup-window">
+        <button id="close-popup">×</button>
+        <h3>Форма бронирования</h3>
+        <div class="popup-content">
+            <div id="hr-widget"></div>
+            <script type="module" src="https://homereserve.ru/widget.js"></script>
+            <script type="module">
+                window.homereserve.initWidgetList({"token":"WIQvMnxzGR"})
+            </script>
+        </div>
+    </div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

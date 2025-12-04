@@ -1,0 +1,65 @@
+/* Базовый стиль для оверлея (фона) */
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Стиль всплывающего окна */
+#popup-window {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* Увеличено для виджета */
+    width: 90%;
+    max-height: 80vh; /* Ограничение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем лишний скролл на контейнере */
+}
+
+/* Контейнер для контента с прокруткой */
+.popup-content {
+    max-height: calc(80vh - 100px); /* Высота с учётом заголовка и отступов */
+    overflow-y: auto; /* Вертикальная прокрутка */
+    padding-right: 10px; /* Для компенсации скроллбара */
+    margin-top: 15px;
+}
+
+/* Стили для скроллбара (опционально) */
+.popup-packed::-webkit-scrollbar {
+    width: 8px;
+}
+.popup-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.popup-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+.popup-content::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Кнопка закрытия */
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+#close-popup:hover {
+    color: #000;
+}

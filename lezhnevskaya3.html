@@ -39,7 +39,7 @@
             </ul>
         </div>
         <!--Бронь-->
-        <div class="booking-button">
+        <div id="booking-button">
             <span>Забронировать</span>
         </div>
     </nav>
@@ -99,11 +99,11 @@
             </div>
         </div>
     </section>
-    <section class="comments">
-        <div class="header-with-line right-h">
-            <p>ОТЗЫВЫ</p>
-        </div>
-    </section>
+<!--    <section class="comments">-->
+<!--        <div class="header-with-line right-h">-->
+<!--            <p>ОТЗЫВЫ</p>-->
+<!--        </div>-->
+<!--    </section>-->
     <footer>
         <div class="footer-container">
             <div class="footer-lists">
@@ -148,13 +148,26 @@
     </footer>
 
 </main>
-<script src="js/nav.js"></script>
-</body>
 <a id="a-undo" href="lezhnevskaya.html#sct3">
     <button id="undo">
         <img src="assets/icons/undo.svg" alt="">
     </button>
 </a>
+<div id="popup-overlay">
+    <div id="popup-window">
+        <button id="close-popup">×</button>
+        <h3>Форма бронирования</h3>
+        <div class="popup-content">
+            <div id="hr-widget"></div>
+            <script type="module" src="https://homereserve.ru/widget.js"></script>
+            <script type="module">
+                window.homereserve.initWidgetList({"token":"WIQvMnxzGR"})
+            </script>
+        </div>
+    </div>
+</div>
+<script src="js/nav.js"></script>
+</body>
 </html>
 
 <!--Код карты-->

@@ -346,6 +346,9 @@ footer h1{
 }
 
 @media (max-width: 1000px) {
+    main{
+        padding-top: 40px;
+    }
     .zvlife-photos {
         display: flex;
     }
@@ -386,6 +389,7 @@ footer h1{
     .footer-bottom p{
         font-size: 14px;
     }
+    .
 }
 
 @media (max-width: 850px) {

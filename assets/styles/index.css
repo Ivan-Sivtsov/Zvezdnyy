@@ -10,12 +10,12 @@ nav{
     border-bottom: 1px solid;
 }
 
-nav .booking-button{
+nav #booking-button{
     background-color: var(--booking-button-color);
     border: 0.15em solid var(--booking-button-color);
 }
 
-nav .booking-button:hover {
+nav #booking-button:hover {
     color: var(--booking-button-color);
 }
 

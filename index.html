@@ -8,6 +8,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
     <link rel="icon" href="assets/logos/Z.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
@@ -39,15 +41,20 @@
             </ul>
         </div>
         <!--Бронь-->
-        <div class="booking-button">
+        <div id="booking-button">
             <span>Забронировать</span>
         </div>
+        <!-- Всплывающее окно -->
+
     </nav>
     </header>
-
     <!--Сам сайт-->
     <main>
-
+<!--        <div id="hr-widget"></div>-->
+<!--        <script type="module" src="https://homereserve.ru/widget.js"></script>-->
+<!--        <script type="module">-->
+<!--            window.homereserve.initWidgetList({"token":"WIQvMnxzGR"})-->
+<!--        </script>-->
         <!--Блок-приветствие-->
         <section class="start">
             <div class="video block">
@@ -58,7 +65,14 @@
                 </div>
                 <div class="video content">
                     <h1>Ваш Звёздный час <br>в ваших апартаментах</h1>
-                    <h6>Премиальное жильё в ЖК «Звёздный» — это <em>больше</em>,<br> чем просто апартаменты. Это пространство, где<br> современный дизайн встречается с безупречным<br> стилем, а каждая деталь создана для вашего комфорта и удовольствия.</h6>
+<!--                    <h6>-->
+<!--                        Премиальное жильё в ЖК «Звёздный» — это <em>больше</em>,<br> чем просто -->
+<!--                        апартаменты. Это пространство, где<br> современный дизайн встречается с -->
+<!--                        безупречным<br> стилем, а каждая деталь создана для вашего комфорта и удовольствия.-->
+<!--                    </h6>-->
+                    <h6>
+
+                    </h6>
                 </div>
             </div>
             <div class="content-under-video">
@@ -147,8 +161,9 @@
                     <li><img src="assets/images/zv future.jpg" alt="" class="zvlife-photo" id="zvlife-photo4"></img></li>
                     <li><img src="assets/images/Арсения/Арсения%203.jpg" alt="" class="zvlife-photo" id="zvlife-photo5"></img></li>
                     <ul id="text-after-zvlife-photos">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis eaque aperiam provident corrupti, laudantium quisquam dolorem! Est molestiae itaque vitae. Commodi harum culpa, asperiores obcaecati exercitationem vitae dolores!</li>
-<!--                        <li id="galery-button"><button class="button" > <span>Галерея</span></button></li>-->
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis
+                            eaque aperiam provident corrupti, laudantium quisquam dolorem! Est molestiae
+                            itaque vitae. Commodi harum culpa, asperiores obcaecati exercitationem vitae dolores!</li>
                     </ul>
                 </ul>
             </div>
@@ -198,6 +213,19 @@
             </div>
         </footer>
     </main>
+    <div id="popup-overlay">
+        <div id="popup-window">
+            <button id="close-popup">×</button>
+            <h3>Форма бронирования</h3>
+            <div class="popup-content">
+                <div id="hr-widget"></div>
+                <script type="module" src="https://homereserve.ru/widget.js"></script>
+                <script type="module">
+                    window.homereserve.initWidgetList({"token":"WIQvMnxzGR"})
+                </script>
+            </div>
+        </div>
+    </div>
     <script src="js/nav.js"></script>
 </body>
 </html>
